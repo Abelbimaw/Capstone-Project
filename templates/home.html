@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+        <title>Nerv-IO</title>
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+
+</head>
+    <body>
+
+               <div id="mainbox" onclick="openFunction()">&#9776; Menu</div>
+         <div id="menu" class="sidemenu">
+            <a href="{{ url_for('home') }}" class="navbar__link">
+                <span class="material-icons">home</span>Home
+            </a>    
+            <a href="{{ url_for('heartPage') }}" class="navbar__link">
+                <span class="material-icons">health_and_safety</span>Heart Disease
+            </a>
+            <a href="#" class="closebtn" onclick="closeFunction()">&times;</a>  
+        </div>
+
+        <script type="text/javascript">
+            function openFunction(){
+             document.getElementById("menu").style.width="300px";
+            }
+           function closeFunction(){
+            document.getElementById("menu").style.width="0px";
+           }
+        </script> 
+
+        <div class="container">
+            <div class="card card-body" style="border: 1px solid black; box-shadow: 0 0 10px black;" >
+                <h2>Nerv-IO</h2>
+                <p>Model Accuracies:</p>
+                <p>Heart Disease Model: <strong>88%</strong></p>
+                <br>
+                <h3>Information about the Diseases which this webApp can predict.</h3>
+                <h4>Heart Disease</h4>
+                <p>The term “heart disease” refers to several types of heart conditions. The most common type of heart disease in the United States is coronary artery disease (CAD), which affects the blood flow to the heart. Decreased blood flow can cause a heart attack.</p>
+                <br>
+                <div class="row">
+                    <div>
+                     <h2>Klandestin</h2>  
+
+                     <table align="center" width="auto" border="1" cellpadding="2" cellspacing="0" >
+                       
+                            <tr>
+                                <th colspan="2">Android </th>
+                                <th colspan="2">Machine larning</th>
+                                <th colspan="2">Cloud</th>
+                            </tr>
+                            <tr>
+                                <td>Farid Savarudin
+                                </td>
+                                <td>Aisyah Nurul Izza
+                                </td>
+                                <td>Meta Mahyarani
+                                </td>
+                                <td>Habib Bahari Khoirullah
+                                </td>
+                                <td>Dedy Setiadi
+                                </td>
+                                <td>Ibnu Ahmad Kamal
+                                </td>
+                            </tr>
+                            
+                    </table>
+                    </div>
+                </div>
+                       
+            </div>
+        </div>
+    </body>
+</html>

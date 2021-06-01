@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+        <title>Nerv-IO</title>
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+    <body>
+
+        <div id="mainbox" onclick="openFunction()">&#9776; Menu</div>
+         <div id="menu" class="sidemenu">
+            <a href="{{ url_for('home') }}" class="navbar__link">
+                <span class="material-icons">home</span>Home
+            </a>    
+            <a href="{{ url_for('heartPage') }}" class="navbar__link">
+                <span class="material-icons">health_and_safety</span>Heart Disease
+            </a>
+            <a href="#" class="closebtn" onclick="closeFunction()">&times;</a>  
+        </div>
+
+        <script type="text/javascript">
+            function openFunction(){
+             document.getElementById("menu").style.width="300px";
+            }
+           function closeFunction(){
+            document.getElementById("menu").style.width="0px";
+           }
+        </script>     
+
+        <div class="isi">
+            {{output1}}  
+            <h1>Early Detection Heart Disease</h1>
+            <form action="{{url_for('predict')}}" method="POST">
+                <input type="text" name="Age" placeholder="Age" id="age" required="required" {{Age}} /><br>
+                <select name="Gender" list="gender" placeholder="Gender" id="genders">
+                <datalist id="gender">
+                    <option value="" disabled selected hidden>Please Choose Your Gender</option>
+                    <option class="opt_color" value="1">Male</option>
+                    <option class="opt_color" value="0">Female</option> {{Gender}}
+                </datalist><br>
+                </select> 
+                <select type="text" name="Chest_Pain" list="cp" placeholder="Chest Pain" id="chestpain">
+                <datalist id="cp">
+                    <option value="" disabled selected hidden>Chest Pain Type</option>
+                    <option class="opt_color" value="0">typical angina</option>
+                    <option class="opt_color" value="1">atypical angina</option>
+                    <option class="opt_color" value="2">non-anginal pain</option>
+                    <option class="opt_color" value="3">asymptomatic</option> {{Chest_Pain}}
+                </datalist></select><br>
+                <input type="text" name="Resting_Blood_Plessure" placeholder="Resting Blood Plessure" id="rest" required = "required"/> <br>
+                <input type="text" name="Cholesterol" placeholder="Cholesterol" id="chol" required = "required"/> <br>
+                <select type="text" name="fbs" list = "fbs" id="fastingblood" placeholder="Fasting Blood Plessure">
+                <datalist id="fbs">
+                    <option value="" disabled selected hidden>Please Choose Your Fasting Blood Plessure (> 120 mg/dl)</option>
+                    <option class="opt_color" value="0">False</option>
+                    <option class="opt_color" value="1">True</option> {{fbs}}
+                </datalist></select><br>
+                <select type="text" name="resting_electrocardiographic" list="restecg" placeholder="Resting Electrocardiographic" id="restecgs">
+                <datalist id="restecg">
+                    <option value="" disabled selected hidden>Please Choose Your Resting Electrocardiographic</option>
+                    <option class="opt_color" value="0">normal</option>
+                    <option class="opt_color" value="1">having ST-T wave abnormality</option> {{resting_electrocardiographic}}
+                </datalist></select><br>
+                <input type="text" name="Maximum_Heart_Rate" placeholder="Maximum Heart Rate" id="thalach" required="required"/><br>
+                <select type="text" name="exang" list="exang" placeholder="Exercise Induced Angina" id="exangs">
+                <datalist id="exang">
+                    <option value="" disabled selected hidden>Please Choose Your Exercise Induced Angina</option>
+                    <option class="opt_color" value="0">No</option>
+                    <option class="opt_color" value="1">Yes</option> 
+                {{exang}}</datalist></select><br>
+                <input type="text" name="ST_depression_induced_by_exercise" placeholder="Oldpeak" id="oldpeaks" required="required"/><br>
+                <select type="text" name="slope" list="slope" placeholder="Slope of the peak exercise ST segment" id="slopes">
+                <datalist id="slope">
+                    <option value="" disabled selected hidden>Please Choose Your Slope of the peak exercise ST segment</option>
+                    <option class="opt_color" value="0">upsloping</option>
+                    <option class="opt_color" value="1">flat</option>
+                    <option class="opt_color" value="2">downsloping</option> 
+                {{slope}}</datalist></select><br>
+                <select type="text" name="ca" list="ca" placeholder="Number of major vessels (0-3) colored by flourosopy" id="cas">
+                <datalist id="ca">
+                    <option value="" disabled selected hidden>Number of major vessels (0-3) colored by flourosopy</option>
+                    <option class="opt_color" value="0">0</option>
+                    <option class="opt_color" value="1">1</option>
+                    <option class="opt_color" value="2">2</option>
+                    <option class="opt_color" value="3">3</option>
+                {{ca}}</datalist></select><br>
+                <select type="text" name="thal" list="thal" placeholder="Thal Value" id="thals">
+                <datalist id="thal">
+                    <option value="" disabled selected hidden>Thal Value</option>
+                    <option class="opt_color" value="3">Normal</option>
+                    <option class="opt_color" value="6">Fixed Defect</option>
+                    <option class="opt_color" value="7">Reversable Defect</option>
+                {{thal}}</datalist></select><br>
+                
+                <button onclick="myFunction()" type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+                
+            </form>
+            <br>
+        </div> 
+    </body>
+</html>
