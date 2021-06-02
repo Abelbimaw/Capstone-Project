@@ -1,5 +1,10 @@
 # Bangkit Capstone Project
-Early Detection Heart Disease by **Klandestin**
+Early Detection Heart Disease by **Klandestin** <br>
+
+Android| Machine Learning | Cloud Computing
+--------------|--------------|--------------
+Farid Savarudin | Meta Mahyarani| Dedy Setiadi
+Aisyah Nurul Izza | Habib Bahari Khoirullah| Ibnu Ahmad Kamal 
 
 ## WebApp Nerv-IO
 This WebApp was developed using Flask Web Framework and was deployed on Google Cloud Platform by using App Engine Service. <br><br>
