@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Nerv-IO</string>
+    <string name="back_dashboard"><u>Back to Main Menu</u>.</string>
+    <string name="question_1">1. Full Name</string>
+    <string name="question_2">2. Age</string>
+    <string name="question_3">3. Gender</string>
+    <string name="question_4">4. Chest Pain Type</string>
+    <string name="question_5">5. Resting Blood Pressure</string>
+    <string name="question_6">6. Cholesterol</string>
+    <string name="question_7">7. Fasting Blood Pressure</string>
+    <string name="question_8">8. Resting Electrocardiography</string>
+    <string name="question_9">9. Max Heart Rate Achieved</string>
+    <string name="question_10">10. Exercise Induced Angina</string>
+    <string name="question_11">11. Oldpeak</string>
+    <string name="question_12">12. Slope of the peak Exercise ST segment</string>
+    <string name="question_13">13. Number of major vessels (Scale 0–3) colored by flourosopy</string>
+    <string name="question_14">14. Thal Value</string>
+    <string name="finish">Finish</string>
+    <string name="phone_number_s">Phone Number : %s</string>
+    <string name="submit">Submit</string>
+    <string name="Name">Name : %s</string>
+    <string name="age">Age : %s</string>
+    <string name="gender">Gender : %s</string>
+</resources>

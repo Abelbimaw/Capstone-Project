@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:background="@color/blue_200"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical"
+        android:padding="15dp"
+        tools:context=".view.DiagnosticTestActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ptsanbold"
+            android:text="@string/question_1"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/ptsanbold"
+            android:text="@string/question_2"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/user_age"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/ptsanbold"
+            android:text="@string/question_3"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinner_gender"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_input" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/ptsanbold"
+            android:text="@string/question_4"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinner_chestpain"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_input" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/ptsanbold"
+            android:text="@string/question_5"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/user_rest_blood"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/ptsanbold"
+            android:text="@string/question_6"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/user_cholesterol"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/ptsanbold"
+            android:text="@string/question_7"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinner_restblood"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_input" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/ptsanbold"
+            android:text="@string/question_8"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinner_restingElectro"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_input" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/ptsanbold"
+            android:text="@string/question_9"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/user_heart_rate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/ptsanbold"
+            android:text="@string/question_10"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinner_exerciseEngina"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_input" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/ptsanbold"
+            android:text="@string/question_11"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/user_oldpeak"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/ptsanbold"
+            android:text="@string/question_12"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinner_stsegment"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_input" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/ptsanbold"
+            android:text="@string/question_13"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinner_majorvessels"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_input" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/ptsanbold"
+            android:text="@string/question_14"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinner_thalvalue"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_input" />
+
+        <Button
+            android:id="@+id/btn_result"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+</ScrollView>
